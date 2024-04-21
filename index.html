@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MineSweeper</title>
+    <link rel="icon" type="image/x-icon" href="flag.png">
     <link rel="stylesheet" href="styling.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
@@ -14,6 +15,52 @@
     <div id="container">
         <h3>Made with &#x2764;</h3>
         <nav id="navbar">
+            <button id="howToPlayBtn">How to Play</button>
+            <div id="howToPlayModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>How to Play Minesweeper</h2>
+                    <p><pre>
+                        <h1>Objective:</h1>
+                        The objective of Minesweeper is to clear the board without detonating any mines.
+                        
+                    <h1>Rules:</h1>
+                        1. The Grid: Minesweeper is played on a grid of squares.
+                           
+                        2. Mines: Hidden throughout the grid are mines. The number of mines and the size of the grid can vary based on the difficulty level you choose (easy, medium, hard).
+                        
+                        3. Clearing Squares:
+                           - Clicking on a square reveals what's underneath it:
+                             - If it's a mine, the game is over.
+                             - If it's empty, the square will display a number indicating how many mines are adjacent to it.
+                             - If a square has no adjacent mines, it will automatically reveal adjacent empty squares.
+                           
+                        4. Flagging Mines:
+                           - Right-click (or long press on mobile) to place a flag on a square you suspect contains a mine.
+                           - This helps you keep track of where you think the mines are.
+                           
+                        5. Winning the Game:
+                           - You win the game by revealing all the squares that do not contain mines.
+                           - Once all safe squares are revealed, the game is won!
+                           
+                        6. Losing the Game:
+                           - If you click on a square that contains a mine, the game is over.
+                           - Be careful! Use the numbers to help deduce where the mines are.
+                           
+                        7. Useful Tips:
+                           - The numbers displayed on the squares indicate how many mines are adjacent to that square.
+                           - Use logic and deduction to strategically clear squares and flag potential mines.
+                           - Start by clicking on squares that are most likely safe, based on the numbers revealed.
+                           - Sometimes you may need to take a guess, especially in larger grids.
+                        
+                        <h1>Controls:</h1>
+                        - Left Click: Reveal a square.
+                        - Right Click (or Long Press): Place a flag on a suspected mine.
+                        - How to Play Button: Click to see these instructions again during the game.
+                        
+                        Remember, Minesweeper is a game of strategy and logic! Have fun and good luck!</pre></p>
+                </div>
+            </div>
             <input type="checkbox" id="DarkMode"><label for="DarkMode">Dark Mode</label>
             <p class="navbar-items" onclick="setDifficulty('easy')">EASY</p>
             <p class="navbar-items" onclick="setDifficulty('medium')">MEDIUM</p>
