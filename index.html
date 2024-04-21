@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <h3>Made with &#x2764;</h3>
+        <nav id="navbar">
+            <input type="checkbox" id="DarkMode"><label for="DarkMode">Dark Mode</label>
+            <p class="navbar-items" onclick="setDifficulty('easy')">EASY</p>
+            <p class="navbar-items" onclick="setDifficulty('medium')">MEDIUM</p>
+            <p class="navbar-items" onclick="setDifficulty('hard')">HARD</p>
+        </nav>
+        <div id="grid-container">
+            <nav id="menu">
+                <div id="minecounter"></div>
+                <div id="image" onclick="restart()"></div>
+                <div id="secondscounter"></div>
+            </nav>
+            <div id="grid"></div>
+        </div>
+    </div>
+    <div id="highscores">
+        <div id="easy" class="highscore-chart">
+            <h4>EASY</h4>
+            <table>
+                <tr>
+                    <th>S.No.</th>
+                    <th>User</th>
+                    <th>Time</th>
+                </tr>
+            </table>
+        </div>
+        <div id="medium" class="highscore-chart">
+            <h4>MEDIUM</h4>
+            <table>
+                <tr>
+                    <th>S.No.</th>
+                    <th>User</th>
+                    <th>Time</th>
+                </tr>
+            </table>
+        </div>
+        <div id="hard" class="highscore-chart">
+            <h4>HARD</h4>
+            <table>
+                <tr>
+                    <th>S.No.</th>
+                    <th>User</th>
+                    <th>Time</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
